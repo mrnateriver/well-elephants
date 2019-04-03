@@ -1,4 +1,4 @@
-package ru.dobrovidov.wellelephants.wellelephants;
+package ru.dobrovidov.wellelephants;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
