@@ -1,0 +1,35 @@
+name: wellelephants
+description: Well, it&#x27;s about elephants.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^5.0.2
+  flutter_svg: ^0.12.0
+  flare_flutter: ^1.3.4
+  http: ^0.12.0+1
+  html: ^0.13.4+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+   - assets/elephant.flr
+   - assets/grass1.flr
+   - assets/grass2.flr
+   - assets/mountains1.flr
+   - assets/mountains2.flr
+   - assets/tree.flr
+   - assets/wiki_logo.svg
+
+  fonts:
+    - family: BalooChettan
+      fonts:
+        - asset: assets/font.ttf
