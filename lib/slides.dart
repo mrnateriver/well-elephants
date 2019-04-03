@@ -29,7 +29,7 @@ class _SlidesState extends State<Slides> {
 	_slide(s, i) => Material(
 		borderRadius: BorderRadius.circular(16.0),
 		elevation: 7,
-		child: padAll(s.hasData ? _text(s.data[i]) : Center(child: CircularProgressIndicator()), 24.0),
+		child: padAll(s.hasError ? Text('Failed to fetch data :(') : (s.hasData ? _text(s.data[i]) : Center(child: CircularProgressIndicator())), 24.0),
 	);
 
 	_page(s, i) => Column(children: [padAll(_slide(s, i), 16.0), Spacer()]);
