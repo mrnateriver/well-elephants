@@ -16,7 +16,6 @@ class Pic extends StatefulWidget {
 
 class _PicState extends State<Pic> with SingleTickerProviderStateMixin {
 	var _ctrl;
-	var _actor;
 
 	initState() {
 		super.initState();
@@ -33,10 +32,7 @@ class _PicState extends State<Pic> with SingleTickerProviderStateMixin {
 
 	build(ctx) {
 		var w = MediaQuery.of(ctx).size.width;
-
-		if (_actor == null)
-			_actor = SizedBox(width: w, height: w * widget.h, child: FlareActor('assets/${widget.flr}.flr', animation: widget.anim));
-
+		var	_actor = SizedBox(width: w, height: w * widget.h, child: FlareActor('assets/${widget.flr}.flr', animation: widget.anim));
 		return Positioned(
 			bottom: widget.b,
 			left: -_ctrl.value * w,
